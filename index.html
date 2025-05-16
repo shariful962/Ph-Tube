@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ph-Tube</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
 
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 
@@ -14,52 +17,55 @@
       @theme {
         --color-clifford: #da373d;
         --font-Inter: "Inter", sans-serif;
-        --color-bodyClr: #FFFFFF;
+        --color-bodyClr: #ffffff;
         --color-textClr1: #171717;
         --color-textClr2: #252525;
-        --color-redClr: #FF1F3D;
+        --color-redClr: #ff1f3d;
         --text-lgr: 2rem;
       }
       .wrapper {
-        @apply max-w-[1536px]
+        @apply max-w-[1536px];
       }
       .btn {
-        @apply py-2.5 px-5 rounded-md cursor-pointer
+        @apply py-2.5 px-5 rounded-md cursor-pointer;
       }
-
     </style>
+  </head>
 
-</head>
-
-<body class="bg-bodyClr font-Inter">
+  <body class="bg-bodyClr font-Inter">
     <header>
-        <!-- header top -->
-         <nav class="wrapper px-4 sm:px-6 mx-auto border-b border-gray-300 py-3 flex items-center justify-between">
-            <!-- logo or brand  -->
-             <div class="flex items-center gap-x-4">
-              <img src="./assets/navLogo.png" alt="navLogo icon">
-              <h1 class="text-lgr font-bold"><span class="text-redClr">PH</span> Tube</h1>
-             </div>
-             <!-- sort view area  -->
-              <div>
-                <button class="btn bg-textClr2/20  text-textClr2 ">Sort by view</button>
-              </div>
-              <!-- button area  -->
-              <div>
-                  <button class=" btn bg-redClr text-white cursor-pointer" >Blog</button>
-              </div>
-         </nav>
-         <!-- header bottom  -->
-          <div class="header-bottom-container flex justify-center items-center">
-              <div>
-                <ul>
-                  <li></li>
-                  <li></li>
-                  <li></li>
-                  <li></li>
-                </ul>
-              </div>
+      <!-- header top -->
+      <nav
+        class="wrapper px-4 sm:px-6 mx-auto border-b border-gray-300 py-3 flex items-center justify-between"
+      >
+        <!-- logo or brand  -->
+        <div class="flex items-center gap-x-4">
+          <img src="./assets/navLogo.png" alt="navLogo icon" />
+          <h1 class="text-lgr font-bold">
+            <span class="text-redClr">PH</span> Tube
+          </h1>
+        </div>
+        <!-- sort view area  -->
+        <div>
+          <button class="btn bg-textClr2/20 text-textClr2">Sort by view</button>
+        </div>
+        <!-- button area  -->
+        <div>
+          <button class="btn bg-redClr text-white cursor-pointer">Blog</button>
+        </div>
+      </nav>
+      <!-- header bottom  -->
+      <div class="header-bottom-container flex justify-center items-center">
+        <div class="mt-8">
+          <div class=" flex items-center gap-x-6" id="category-container">
+            <div><button class="btn bg-redClr text-white font-medium">All</button></div>
+            
           </div>
+        </div>
+      </div>
     </header>
-</body>
+
+
+    <script src="app.js"></script>
+  </body>
 </html>
